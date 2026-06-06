@@ -4,6 +4,8 @@ import platform
 import datetime
 import sys
 
+import downloader
+
 # platform check until linux support
 if platform.system() != "Windows":
     print("sorry this only works on windows rn")
@@ -17,10 +19,13 @@ else:
     base_dir = pathlib.Path(__file__).parent
 
 
-installer_path = base_dir / "VencordInstallerCli.exe"
+
+installer_downloaded, installer_path = downloader.download_and_verify(base_dir)
+if not installer_downloaded:
+    exit(1)
 
 result = subprocess.run(
-    [installer_path, "-repair", "-branch", "auto"],
+    [str(installer_path), "-repair", "-branch", "auto"],
     capture_output=True,
     text=True
 )

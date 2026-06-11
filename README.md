@@ -5,7 +5,6 @@ an auto-running script to install and update vencord on startup.
 [![asciicast](https://asciinema.org/a/c3jzNumOhhVveAe4.svg)](https://asciinema.org/a/c3jzNumOhhVveAe4)
 
 ![GitHub Release](https://img.shields.io/github/v/release/snqwq/Vencord-Autoinstall)
-![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/snqwq/Vencord-Autoinstall)
 ![GitHub repo size](https://img.shields.io/github/repo-size/snqwq/Vencord-Autoinstall)
 
 

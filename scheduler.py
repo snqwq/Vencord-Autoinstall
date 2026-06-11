@@ -1,8 +1,5 @@
 import subprocess
-import pathlib
 import platform
-import datetime
-import sys
 
 def check_task_exists(task_name):
     if platform.system() != "Windows":
@@ -31,4 +28,19 @@ def register_task(task_name, script_path):
         return True
     else:
         print(f"Failed to register task '{task_name}'. Error: {result.stderr}")
+        return False
+
+def unregister_task(task_name):
+    if platform.system() != "Windows":
+        print("sorry this only works on windows rn")
+        return False
+
+    command = f'schtasks /Delete /TN "{task_name}" /F'
+    result = subprocess.run(command, capture_output=True, text=True, shell=True)
+
+    if result.returncode == 0:
+        print(f"Task '{task_name}' unregistered successfully.")
+        return True
+    else:
+        print(f"Failed to unregister task '{task_name}'. Error: {result.stderr}")
         return False

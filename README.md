@@ -1,4 +1,5 @@
-# Vencord Autoinstall
+# ![Vencord Autoinstall](./VCAI%20logo.png)
+
 
 an auto-running script to install and update vencord on startup.
 

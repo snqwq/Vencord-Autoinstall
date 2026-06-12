@@ -1,6 +1,5 @@
 # ![Vencord Autoinstall](./VCAI%20logo.png)
 
-
 an auto-running script to install and update vencord on startup.
 
 [![asciicast](https://asciinema.org/a/c3jzNumOhhVveAe4.svg)](https://asciinema.org/a/c3jzNumOhhVveAe4)
@@ -8,27 +7,37 @@ an auto-running script to install and update vencord on startup.
 ![GitHub Release](https://img.shields.io/github/v/release/snqwq/Vencord-Autoinstall)
 ![GitHub repo size](https://img.shields.io/github/repo-size/snqwq/Vencord-Autoinstall)
 
-
 [Download the latest release](https://github.com/snqwq/Vencord-Autoinstall/releases/latest)
 
 > [!IMPORTANT]  
-> This project is independently developed  in my free time. as with any third-party tool, use it at your own risk. this tool is persistent and will run on startup. security is not guaranteed, but I will do my best to ensure it is safe. the source code is available for review and contributions.
+> This project is independently developed  in my free time. as with any third-party tool, use it at your own risk. this tool is persistent and will run on startup. security is not guaranteed, but I will do my best to ensure it is safe (report any issues you find please). the source code is available for review and contributions.
 
 ## Quick start
 
 ### Windows
 
-just run the executable and it will set up everything for you.
+1. Download the latest release from the [releases page](https://github.com/snqwq/Vencord-Autoinstall/releases/latest).
+2. Extract the downloaded zip file to a location of your choice.
+3. Run `vencord_autoinstall.exe` to start the autoinstall process.
+4. Enjoy!
 
 ### Linux
 
-coming soon!
+coming soon! (maybe in v1.0.0)
 
 ## Features
 
-- auto install and update vencord on startup
+- auto install and update vencord on logon/startup
 - securely download and verify the installer
 - minimal user interaction required (set it and forget it)
+
+## Future plans
+
+- support for linux
+- auto update the autoinstall script itself
+- add more features and such based on user feedback
+- add arguments for more control (install location, disable auto update, general controlling and fine tuning stuff)
+- improved logging and error handling
 
 ## How to build
 

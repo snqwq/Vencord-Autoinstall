@@ -10,7 +10,7 @@ an auto-running script to install and update vencord on startup.
 [Download the latest release](https://github.com/snqwq/Vencord-Autoinstall/releases/latest)
 
 > [!IMPORTANT]  
-> This project is independently developed  in my free time. as with any third-party tool, use it at your own risk. this tool is persistent and will run on startup. security is not guaranteed, but I will do my best to ensure it is safe (report any issues you find please). the source code is available for review and contributions.
+> This project is independently developed in my free time. as with any third-party tool, use it at your own risk. this tool is persistent and will run on startup. security is not guaranteed, but I will do my best to ensure it is safe (report any issues you find please). the source code is available for review and contributions.
 
 ## Quick start
 
@@ -41,7 +41,18 @@ coming soon! (maybe in v1.0.0)
 
 ## How to build
 
+### Requirements
+
+- windows 10 or later (linux support coming soon)
+- [uv](https://github.com/astral-sh/uv)
+
+### Build instructions
+
+1. clone the repository
+2. run the following command in the project directory:
+
 ```bash
+uv sync
 pyinstaller --noconfirm --clean --name vencord_autoinstall --onedir updater.py
 ```
 
